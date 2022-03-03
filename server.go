@@ -8,7 +8,7 @@ import (
 	"github.com/allen-woods/kevlar/graph/generated"
 	"github.com/arsmn/fastgql/graphql/handler"
 	"github.com/arsmn/fastgql/graphql/playground"
-	fiber "github.com/gofiber/fiber/v2"
+	"github.com/gofiber/fiber/v2"
 )
 
 const defaultPort = "8080"
