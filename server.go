@@ -21,7 +21,13 @@ func main() {
 
 	app := fiber.New()
 
-	srv := handler.NewDefaultServer(generated.NewExecutableSchema(generated.Config{Resolvers: &graph.Resolver{}}))
+	srv := handler.NewDefaultServer(
+		generated.NewExecutableSchema(
+			generated.Config{
+				Resolvers: &graph.Resolver{},
+			},
+		),
+	)
 
 	gqlHandler := srv.Handler()
 	playground := playground.Handler("GraphQL playground", "/query")
